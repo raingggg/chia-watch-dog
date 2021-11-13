@@ -1,3 +1,3 @@
-const cwd = require('../index');
+const ChiaWatchDog = require('../index');
 
-console.log('hoho');
+new ChiaWatchDog().start();
