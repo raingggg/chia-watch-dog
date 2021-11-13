@@ -1,0 +1,32 @@
+{
+  "name": "chia-watch-dog",
+  "version": "0.0.1",
+  "description": "- watch dog for chia and forks of chia - only read the log, never get any sensitive information",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./test/test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raingggg/chia-watch-dog.git"
+  },
+  "keywords": [
+    "chia",
+    "watch",
+    "dog",
+    "fork",
+    "log",
+    "parser",
+    "quality",
+    "event"
+  ],
+  "author": "raingggg",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/raingggg/chia-watch-dog/issues"
+  },
+  "homepage": "https://github.com/raingggg/chia-watch-dog#readme",
+  "dependencies": {
+    "tail": "^2.2.4"
+  }
+}
