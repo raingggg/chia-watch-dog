@@ -1,8 +1,8 @@
 const ChiaWatchDog = require('../index');
 
 const cwd = new ChiaWatchDog();
-cwd.on('pstart', (str) => {
-  console.log('pstart', str);
+cwd.on('dog', (str) => {
+  console.log('dog', str);
 });
 
 cwd.start();
