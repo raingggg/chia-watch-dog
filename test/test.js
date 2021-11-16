@@ -1,3 +1,4 @@
+const { logger } = require('../lib/utils/logger');
 const { ChiaWatchDog } = require('../index');
 
 const cwd = new ChiaWatchDog();
