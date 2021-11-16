@@ -3,11 +3,11 @@ const { ChiaWatchDog } = require('../index');
 
 const cwd = new ChiaWatchDog('.chia/mainnet/log/debug.log');
 cwd.on('dog', (ev) => {
-  logger.info('dog', ev);
+  logger.error('dog', ev);
 });
 
 cwd.on('dailydog', (ev) => {
-  logger.info('dailydog', ev);
+  logger.error('dailydog', ev);
 });
 
 cwd.start();
