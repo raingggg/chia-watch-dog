@@ -1,12 +1,12 @@
-const ChiaWatchDog = require('../index');
+const { ChiaWatchDog } = require('../index');
 
 const cwd = new ChiaWatchDog();
 cwd.on('dog', (ev) => {
-  console.log('dog', ev);
+  logger.info('dog', ev);
 });
 
 cwd.on('dailydog', (ev) => {
-  console.log('dailydog', ev);
+  logger.info('dailydog', ev);
 });
 
 cwd.start();

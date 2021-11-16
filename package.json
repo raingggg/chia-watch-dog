@@ -27,6 +27,7 @@
   },
   "homepage": "https://github.com/raingggg/chia-watch-dog#readme",
   "dependencies": {
+    "log4js": "^6.3.0",
     "tail": "^2.2.4"
   }
 }
