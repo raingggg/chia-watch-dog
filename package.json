@@ -1,6 +1,6 @@
 {
   "name": "chia-watch-dog",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "- watch dog for chia and forks of chia - only read the log, never get any sensitive information",
   "main": "index.js",
   "scripts": {

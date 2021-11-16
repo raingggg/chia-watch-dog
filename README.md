@@ -1,10 +1,13 @@
 # chia-watch-dog
-- watch dog for chia and forks of chia
+- simplified nodejs version of [chiadog](https://github.com/martomi/chiadog)
+- watch dog for chia and all forks of chia
 - only read the log, never get any sensitive information
 
 # quick start
-`
+```
 const { ChiaWatchDog } = require('chia-watch-dog');
+
+const cwd = new ChiaWatchDog('.chia/mainnet/log/debug.log');
 
 // immediate events
 cwd.on('dog', (ev) => {
@@ -17,7 +20,12 @@ cwd.on('dailydog', (ev) => {
 });
 
 cwd.start();
-`
+```
+
+# log file path format
+- homedir path: '.chia/mainnet/log/debug.log' - will use /home/username/.chia/mainnet/log/debug.log
+- absolute path: '/home/sky/.chia/mainnet/log/debug.log' - use the path directly
+
 ## Supported Notifications
 
 | Subsystem | Notification (example values) | Priority |
