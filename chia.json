@@ -1,0 +1,5 @@
+{
+    "chainlog": ".chia/mainnet/log/debug.log",
+    "watchDogLogLevel": "error",
+    "watchDogLogFile": ".coctohug-web/cwd.log"
+}
