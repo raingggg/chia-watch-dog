@@ -1,10 +1,10 @@
 {
   "name": "chia-watch-dog",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "- watch dog for chia and forks of chia - only read the log, never get any sensitive information",
   "main": "index.js",
   "scripts": {
-    "start": "node ./test/test"
+    "start": "TEST_CWD=true node ./test/test"
   },
   "repository": {
     "type": "git",
