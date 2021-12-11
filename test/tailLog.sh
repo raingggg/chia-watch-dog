@@ -24,6 +24,8 @@ echo "line 20" >>${LOG_FILE_NAME}
 
 # found block
 echo "2021-11-14T01:42:54.775 full_node flora_proxy: chia.full_node.full_node: INFO     🍀 ️Farmed unfinished_block 91cd50fb034b10e4b0bb5a00c03cff865d2798bf97dd1f3f4391ef34b88d2bed, SP: 55, validation time: 0.0165 seconds, cost: 0" >>${LOG_FILE_NAME}
+echo "2021-12-11T07:19:54.006 full_node cactus.full_node.full_node: INFO     🍀 ️Farmed unfinished_block 014604cf0b61a2779da94809e91202c8b3221ae78c38f764367dad0cf3bdf53c, SP: 47, validation time: 0.036832332611083984, cost: 0" >>${LOG_FILE_NAME}
+echo "2021-12-11T06:13:10.325 full_node cryptodoge.full_node.full_node: INFO     🍀 ️Farmed unfinished_block 50830510a6c260f5fe12fd638c5a249d41bee215c4cfd2390a0eca7a3cf89297, SP: 53, validation time: 0.0166 seconds, cost: 0" >>${LOG_FILE_NAME}
 
 # signage point
 echo "2021-11-11T22:43:49.079 full_node chia.full_node.full_node: INFO     ⏲️  Finished signage point 62/64: 1n4dxa2d720755a72fe6507193d8d441732cb083a0128d9ye915125y9c01" >>${LOG_FILE_NAME}
@@ -38,8 +40,11 @@ echo "2021-11-16T04:42:44.183 full_node flora_proxy: chia.full_node.full_node: I
 # adding coin
 echo "2021-11-14T05:44:47.829 wallet flora_proxy: chia.wallet.wallet_state_manager: INFO     Adding coin: {'amount': 500000000000," >>${LOG_FILE_NAME}
 
-# plots
-echo "2021-11-11T06:44:09.598 harvester flora_proxy: chia.harvester.harvester: INFO     10 plots were eligible for farming 0957f85c4c... Found 0 proofs. Time: 1.53096 s. Total 1000 plots" >>${LOG_FILE_NAME}
-echo "2021-11-13T07:44:09.598 harvester flora_proxy: chia.harvester.harvester: INFO     10 plots were eligible for farming 0957f85c4c... Found 0 proofs. Time: 40 s. Total 300 plots" >>${LOG_FILE_NAME}
-echo "2021-11-15T08:44:09.598 harvester flora_proxy: chia.harvester.harvester: INFO     10 plots were eligible for farming 0957f85c4c... Found 0 proofs. Time: 1.53096 s. Total 1100 plots" >>${LOG_FILE_NAME}
-echo "2021-11-16T09:44:09.598 harvester flora_proxy: chia.harvester.harvester: INFO     10 plots were eligible for farming 0957f85c4c... Found 0 proofs. Time: 1.53096 s. Total 1200 plots" >>${LOG_FILE_NAME}
+# plots - will never trigger, since 10 min threshold is compared by local time, not the extracted time
+echo "2021-11-11T06:44:09.598 harvester flora_proxy: chia.harvester.harvester: INFO     1000 plots were eligible for farming 0957f85c4c... Found 0 proofs. Time: 1.53096 s. Total 1000 plots" >>${LOG_FILE_NAME}
+echo "2021-12-13T07:44:09.598 harvester flora_proxy: chia.harvester.harvester: INFO     300 plots were eligible for farming 0957f85c4c... Found 0 proofs. Time: 40 s. Total 300 plots" >>${LOG_FILE_NAME}
+echo "2021-12-13T07:45:09.598 harvester flora_proxy: chia.harvester.harvester: INFO     200 plots were eligible for farming 0957f85c4c... Found 0 proofs. Time: 50 s. Total 200 plots" >>${LOG_FILE_NAME}
+echo "2021-12-13T07:53:09.598 harvester flora_proxy: chia.harvester.harvester: INFO     100 plots were eligible for farming 0957f85c4c... Found 0 proofs. Time: 50 s. Total 100 plots" >>${LOG_FILE_NAME}
+echo "2021-12-13T07:55:09.598 harvester flora_proxy: chia.harvester.harvester: INFO     10 plots were eligible for farming 0957f85c4c... Found 0 proofs. Time: 50 s. Total 10 plots" >>${LOG_FILE_NAME}
+echo "2021-11-15T08:44:09.598 harvester flora_proxy: chia.harvester.harvester: INFO     1100 plots were eligible for farming 0957f85c4c... Found 0 proofs. Time: 1.53096 s. Total 1100 plots" >>${LOG_FILE_NAME}
+echo "2021-11-16T09:44:09.598 harvester flora_proxy: chia.harvester.harvester: INFO     1200 plots were eligible for farming 0957f85c4c... Found 0 proofs. Time: 1.53096 s. Total 1200 plots" >>${LOG_FILE_NAME}
