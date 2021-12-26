@@ -1,7 +1,7 @@
 {
   "name": "chia-watch-dog",
-  "version": "0.0.8",
-  "description": "- watch dog for chia and forks of chia - only read the log, never get any sensitive information",
+  "version": "1.0.0",
+  "description": "watch dog for chia and forks of chia - only read the log, never get any sensitive information",
   "main": "index.js",
   "scripts": {
     "start": "TEST_CWD=true node ./test/test"

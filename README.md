@@ -8,6 +8,7 @@
 const { ChiaWatchDog } = require('chia-watch-dog');
 
 const cwd = new ChiaWatchDog('.chia/mainnet/log/debug.log');
+// cwd.sampleWithPercentate(5); // watch 100% log by default, but you can sample it to reduce resource cost
 
 // immediate events
 cwd.on('dog', (ev) => {
